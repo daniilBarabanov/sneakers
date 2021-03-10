@@ -41,9 +41,6 @@ let clean_css = require('gulp-clean-css');
 let rename = require('gulp-rename');
 let uglify = require('gulp-uglify-es').default;
 let imagemin = require('gulp-imagemin');
-let webp = require('gulp-webp');
-let webphtml = require('gulp-webp-html');
-let webpcss = require('gulp-webp-css');
 let svgSprite = require('gulp-svg-sprite');
 let fonter = require('gulp-fonter');
 
@@ -59,7 +56,6 @@ function browserSync (params) {
 
 function html() {
     return src(path.src.html)
-        .pipe(webphtml())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
@@ -80,7 +76,6 @@ function css() {
             cascade: true,
         })
     )
-    .pipe(webpcss()) // НАДО ЕЩЕ ДОБАВИТЬ СКРИПТ С ФУНКЦИЕЙ ТРАНСФОРМАЦИИ КАРТИНОК В ВЕБП!!!
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(
@@ -111,11 +106,6 @@ function js() {
 
 function images() {
     return src(path.src.img)
-    .pipe(
-        webp({
-            quality: 70,
-        })
-    )
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
         .pipe(
