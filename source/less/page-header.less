@@ -6,7 +6,7 @@
     align-items: center;
     width:100%;
     height: 50px;
-    background-color: chocolate;
+    background-color: #F9EEE3;
 }
 .page-header::before {
     content: '';
@@ -15,7 +15,7 @@
     left:0;
     width: 100%;
     height: 100%;
-    background-color: darkgoldenrod;
+    background-color: #F9EEE3;
     z-index: 4;
 }
 .page-header__wrapper {
@@ -51,28 +51,31 @@
 }
 .header-burger__span {
     position: absolute;
-    background-color: #000000;
+    background-color: #C47344;
     left:0;
     width: 100%;
     height: 2px;
     top:9px;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .header-burger::before,
 .header-burger::after {
     content: '';
-    background-color: #000000;
+    background-color: #C47344;
     position: absolute;
     width: 100%;
     height: 2px;
     left:0;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .header-burger::before {
     top:0;
 }
 .header-burger::after {
     bottom: 0;
+}
+.active {
+    display: block;
 }
 .header-burger.active::before {
     transform: rotate(45deg);
@@ -86,15 +89,15 @@
     transform: scale(0);
 }
 .header-menu {
-    display: flex;
+    display: block;
     justify-content: center;
     position: fixed;
     top:-100%;
     left:0;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: #F9EEE3;
     transition: all 0.2s ease 0s;
-    padding:65px 0px 0px 0px;
+    padding:63px 0px 0px 0px;
 }
 .header-list {
     display: flex;
@@ -105,24 +108,33 @@
 .header-menu.active{
     top:0;
 }
-.menu-item__link {
-    width: 100%;
-    color:black;
-    cursor: pointer;
-}
 .header-list__item {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 100%;
     margin-bottom: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #C47344;
+    z-index: 5;
 }
 .header-list__item:last-child {
     margin-bottom: 0px;
 }
 .header-item__link {
-    color:black;
+    height: 100%;
+    color:#C47344;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 18px;
     text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.zdorova {
+    display: block;
+}
+.block{
+    transition: all 0.2s ease 0s;
+    padding-top: 180px;
 }
