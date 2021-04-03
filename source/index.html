@@ -50,6 +50,38 @@
                 </nav>
             </div>
         </div>
+        <ul class="page-header__list header-list">
+            <li class="header-list__item header-item">
+                <a class="header-item__link">
+                    Новинки
+                </a>
+            </li>
+            <li class="header-list__item header-item">
+                <a class="header-item__link">
+                    Бренды
+                </a>
+            </li>
+            <li class="header-list__item header-item">
+                <a class="header-item__link">
+                    Обувь
+                </a>
+            </li>
+            <li class="header-list__item header-item">
+                <a class="header-item__link">
+                    Одежда
+                </a>
+            </li>
+            <li class="header-list__item header-item">
+                <a class="header-item__link">
+                    Распродажа
+                </a>
+            </li>
+            <li class="header-list__item header-item">
+                <a class="header-item__link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
         <!--
             background-color: #F9EEE3;
             background-color: #C47344;
@@ -57,43 +89,95 @@
     </header>
 
     <main class="page-main">
-        <section class="page-main__section main-section page-main__section--1">
-            <h1 class="main-section__heading">Ну тут якобы статья</h1>
-            <div class="main-section__text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
+        <section class="page-promo">
+            <div class="page-promo__slider page-slider">
+                <div class="slider__wrapper">
+                  <div class="page-slider__items slider__items">
+                    <div class="slider__item">
+                      <div style="height: 250px; background: orange;"></div>
+                    </div>
+                    <div class="slider__item">
+                      <div style="height: 250px; background: green;"></div>
+                    </div>
+                    <div class="slider__item">
+                      <div style="height: 250px; background: violet;"></div>
+                    </div>
+                    <div class="slider__item">
+                      <div style="height: 250px; background: coral;"></div>
+                    </div>
+                  </div>
+                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next" href="#" role="button"></a>
+              </div>        
+        </section>
+        <section class="page-gender">
+            <div class="page-gender__wrapper">
+            <ul class="page-gender__list gender-list">
+                <li class="gender-list__item gender-item">
+                    <a class="gender-item__link gender-link">
+                        <img class="gender-link__image" alt="Изображение парня">
+                        <p class="gender-link__description">Для мужчин</p>
+                    </a>
+                </li>
+                <li class="gender-list__item gender-item">
+                    <a class="gender-item__link gender-link">
+                        <img class="gender-link__image" alt="Изображение девушки">
+                        <p class="gender-link__description">Для женщин</p>
+                    </a>
+                </li>
+            </ul>
             </div>
         </section>
-        <section class="page-main__section main-section page-main__section--2">
-            <h2 class="main-section__subheading">Тут что-то по типу статьи тоже</h2>
-            <div class="main-section__text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
+        <section class="page-new">
+            <div class="page-new__wrapper">
+                <h2 class="page-new__heading">
+                    Новинки
+                </h2>
+                <ul class="page-new__list new-list">
+                    <li class="new-list__item new-item">
+                        <a class="new-item__link" href="https://google.com/">
+                        <img class="new-item__image" alt="Картинка новинки">
+                        <p class="new-item__link__description">Кроссовки BLA BLA BLA</p>
+                        <p class="new-item__link__price">Цена: 666 bucks</p>
+                        </a>
+                    </li>
+                    <li class="new-list__item new-item">
+                        <a class="new-item__link" href="https://google.com/">
+                        <img class="new-item__image" alt="Картинка новинки">
+                        <p class="new-item__link__description">Кроссовки BLA BLA BLA</p>
+                        <p class="new-item__link__price">Цена: 666 bucks</p>
+                        </a>
+                    </li>
+                    <li class="new-list__item new-item">
+                        <a class="new-item__link" href="https://google.com/">
+                        <img class="new-item__image" alt="Картинка новинки">
+                        <p class="new-item__link__description">Кроссовки BLA BLA BLA</p>
+                        <p class="new-item__link__price">Цена: 666 bucks</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="page-main__section main-section page-main__section--3">
-            <h2 class="main-section__subheading">Ну и тут тоже что-то похожее на статью</h2>
-            <div class="main-section__text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, temporibus fuga labore architecto voluptatum similique,
-                repellat unde eius itaque tempora eum, corporis magni ut consectetur. Reiciendis cumque id quas deleniti!</p>
+        <section class="page-bestsellers">
+            <div class="page-bestsellers__wrapper">
+                <div class="page-bestsellers__slider slider-container">
+                    <div class="slider-container__track slider-track">
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                        <div class="slider-track__item slider-item"></div>
+                    </div>
+                </div>
+                <div class="page-bestsellers__buttons slider-buttons">
+                    <button class="btn-prev">Prev</button>
+                    <button class="btn-next">Next</button>
+                </div>
             </div>
         </section>
     </main>
@@ -101,5 +185,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>

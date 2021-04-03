@@ -41,7 +41,7 @@ if (isMobile.any()) {
 }
 
 //активация бургера
-const iconMenu = document.querySelector('.header-menu__icon');
+const iconMenu = document.querySelector('.header-menu__icon'); 
 const menuBody = document.querySelector('.menu-body');
 if(iconMenu) {
     iconMenu.addEventListener('click', function(e) {
